@@ -1,0 +1,10 @@
+extends app.pug 
+
+block titulo
+    title Condicionais | If, Else
+
+block conteudo
+    case mes
+        when 1: h1 janeiro
+        when 2: h1 fevereiro 
+        default: h1 mês incorreto

@@ -1,0 +1,18 @@
+extends app.pug
+block titulo
+    title Laços de Repetição | Each 
+
+block conteudo
+         h1 Lista
+            table.table 
+                thead 
+                    tr 
+                        th(scope='col') Nome 
+                        th(scope='col') Ano 
+                tbody
+                    each carro, indice in carros
+                        tr 
+                            td #{carro.nome}
+                            td #{carro.ano}
+                
+                
